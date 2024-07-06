@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:revision_app/constant.dart';
-import 'package:revision_app/home.dart';
+import 'package:revision_app/onBoardingScreen.dart';
 import 'package:revision_app/model.dart';
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: OnBoardingScreen(),
     );
   }
 }
