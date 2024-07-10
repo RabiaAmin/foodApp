@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:revision_app/constant.dart';
+import 'package:revision_app/model/detail_screen_argument.dart';
 import 'package:revision_app/model/items_model.dart';
+import 'package:revision_app/routes.dart';
 import 'package:revision_app/sizeConfig.dart';
 
 class ItemDisplay extends StatefulWidget {
@@ -40,6 +42,13 @@ class _ItemDisplayState extends State<ItemDisplay> {
           itemBuilder: (context, index) {
             FoodDetail food = foodsItems[index];
             return GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  Routes.detail,
+                  arguments: DetailScreenArgument(food: food),
+                );
+              },
               child: Container(
                 height: SizeConfig.blockH! * 5,
                 width: SizeConfig.blockW! * 5,
