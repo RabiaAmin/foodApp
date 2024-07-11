@@ -38,7 +38,7 @@ class DetailItemHeader extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Icon(
                   Icons.favorite_border,
-                  color: kAccrent1Color,
+                  color: kPrimaryLightColor,
                 ),
               ),
             ),
