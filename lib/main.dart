@@ -4,7 +4,7 @@ import 'package:revision_app/constant.dart';
 import 'package:revision_app/homeScreen.dart';
 import 'package:revision_app/model/items_model.dart';
 import 'package:revision_app/onBoardingScreen.dart';
-import 'package:revision_app/model.dart';
+import 'package:revision_app/model/model.dart';
 import 'package:revision_app/productDetail.dart';
 import 'package:revision_app/routes.dart';
 
